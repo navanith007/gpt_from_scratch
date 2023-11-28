@@ -36,7 +36,7 @@ if not os.path.exists(os.path.abspath('models/bigram_encoder_decoder.pkl')):
 else:
     print("Encoder and decoder functions file already exists.")
 
-encode, decode = load_encoder_decoder_functions()
+encode, decode = load_encoder_decoder_functions(file_path='models/bigram_encoder_decoder.pkl')
 
 encoded_input_text_data = torch.tensor(encode(text_data), dtype=torch.long)
 
@@ -62,6 +62,8 @@ for epoch in range(100):
         optimizer.zero_grad(set_to_none=True)
         loss.backward()
         optimizer.step()
+        break
+    break
 
     epoch_loss = total_loss / BIGRAM_MODEL_CONFIG.get("MAX_ITER", 128)
     # Log the loss to TensorBoard
