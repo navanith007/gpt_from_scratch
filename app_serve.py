@@ -1,10 +1,11 @@
 from fastapi import FastAPI
-from app.api.bigram_serve import bigram_router
+from app.api import bigram_router, bigram_gpt_router
 
 
 def create_app():
     fast_app = FastAPI()
     fast_app.include_router(bigram_router)
+    fast_app.include_router(bigram_gpt_router)
     return fast_app
 
 

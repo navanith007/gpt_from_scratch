@@ -1,5 +1,6 @@
 fastapi==0.104.1
 torch==2.1.1
+torchtext==0.16.1
 tensorboard==2.15.1
 dill==0.3.7
 uvicorn==0.24.0.post1

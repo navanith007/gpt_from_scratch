@@ -5,8 +5,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://www.kooapp.com/feed">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Koo.svg/360px-Koo.svg.png" alt="Logo" width="80" height="80">
+  <a href="https://chat.openai.com/">
+    <img src="https://media.sketchfab.com/models/901f21ea7d0b46748e8026b6b5f7306d/thumbnails/094af3f46ce14da0b4045a50545d1d15/3cb664da18494ecb9e9e2408d0fdd2a3.jpeg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">END TO END GPT FROM SCRATCH</h3>
@@ -14,7 +14,7 @@
   <p align="center">
     This repository is designed for educational purposes, providing a comprehensive guide on constructing a GPT model from scratch using PyTorch, training the model with textual data, and deploying it.
     <br />
-    <a href="https://docs.google.com/document/d/1d2hXHXOo3D8_cJG5Tmu7tAnfR2k6c4v6aPKNzyhkFoY/edit?usp=sharing"><strong>Explore the docs »</strong></a>
+    <a href="https://docs.google.com/document/d/1HgSY3pI5c_SjbEVn77Ve8zJ8VWmXwi9RkZY4czJx-Qg/edit"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
@@ -75,37 +75,28 @@ This project has developed for platform independent using contairization.
 
 ### Prerequisites
 
-You should have python 3.9 install in your system. For mac users, I have given a link to blog which explains how to
-install specifc python version. please look into
-it. [python installation](https://www.freecodecamp.org/news/python-version-on-mac-update/)
+Ensure that Python 3.9 is installed on your system. If you are using a Mac, refer to the provided blog link for detailed
+instructions on installing a specific Python version. Please review the information in the blog for
+guidance. [python installation](https://www.freecodecamp.org/news/python-version-on-mac-update/)
 
-### Installation
+### Installation  (Mac)
 
-1. Clone the repo
-sh
-   git clone https://github.com/bombinatetech/ml-spam-comment-classifier.git
-   
+1. Clone the repo  
+`git clone https://github.com/navanith007/gpt_from_scratch.git`
 
 2 Create python virtual environement
 
-   sh
-   python3.9 -m venv spam_env
-   
+`python3.9 -m venv llm_Env`
 
-   sh
-   source spam_env/bin/activate
-   
+`source llm_Env/bin/activate`
 
 3. Install the requirements
 
-sh
-   pip install -r dev-requirements.txt
+`pip install -r requirements.txt`
 
+4. Running the gpt service locally
 
-4. Running the service locally
-sh
-   sh run_app.sh 
-   
+`sh start_app_service.sh`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,6 +144,9 @@ To make changes to this service you need follow below steps before going into pr
 [product-screenshot]: images/screenshot.png
 
 [python]: https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python&logoColor=python
+
 [python-url]: https://www.python.org/
+
 [FLask]: https://img.shields.io/badge/Flask-green?style=for-the-badge&logo=flask&logoColor=black
+
 [sanic-url]: https://sanic.dev/en/
