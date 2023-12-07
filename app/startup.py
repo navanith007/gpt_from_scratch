@@ -13,15 +13,13 @@ from app.helpers.utils import download_blob
 def on_startup(app):
     # Create local directories if they don't exist
     local_directory = LOCAL_DESTINATION_GPT_MODEL_PATH.split('/')[0]
-    print(local_directory)
     model_directory = LOCAL_DESTINATION_GPT_MODEL_PATH.split('/')[1]
-    print(model_directory)
     os.makedirs(local_directory, exist_ok=True)
     os.makedirs(local_directory + "/" + model_directory, exist_ok=True)
 
     download_blob(GCP_BUCKET_NAME, GCP_SOURCE_GPT_MODEL_PATH, LOCAL_DESTINATION_GPT_MODEL_PATH)
     download_blob(GCP_BUCKET_NAME, GCP_SOURCE_GPT_ENCODER_DECODER_PATH,
-                        LOCAL_DESTINATION_GPT_ENCODER_DECODER_PATH)
+                  LOCAL_DESTINATION_GPT_ENCODER_DECODER_PATH)
     download_blob(GCP_BUCKET_NAME, GCP_SOURCE_GPT_CONFIG_PATH, LOCAL_DESTINATION_GPT_CONFIG_PATH)
 
     # Load the pre-trained model
