@@ -95,6 +95,9 @@ for epoch in range(BIGRAM_GPT_MODEL_CONFIG.get("EPOCHS", 100)):
     # # Log the loss to TensorBoard
     writer.add_scalar('Training Loss', epoch_loss, epoch)
 
+
+
+
 # Save the model
 torch.save(model.state_dict(), 'models/bigram_gpt_model.pth')
 
