@@ -1,0 +1,7 @@
+GCP_BUCKET_NAME = 'gpt_model'
+GCP_SOURCE_GPT_MODEL_PATH = 'bigram_gpt/bigram_gpt_model.pth'
+GCP_SOURCE_GPT_ENCODER_DECODER_PATH = 'bigram_gpt/bigram_gpt_encoder_decoder.pkl'
+GCP_SOURCE_GPT_CONFIG_PATH = 'bigram_gpt/bigram_gpt_config.json'
+LOCAL_DESTINATION_GPT_MODEL_PATH = 'models/bigram_gpt/bigram_gpt_model.pth'
+LOCAL_DESTINATION_GPT_ENCODER_DECODER_PATH = 'models/bigram_gpt/bigram_gpt_encoder_decoder.pkl'
+LOCAL_DESTINATION_GPT_CONFIG_PATH = 'models/bigram_gpt/bigram_gpt.json'
