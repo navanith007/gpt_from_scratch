@@ -54,7 +54,7 @@
 
 ## About The Project
 
-This project is owned by koo ml team for which serves the utilities for koo spam identification.
+This project is for educational purpose.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
